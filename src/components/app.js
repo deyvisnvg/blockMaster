@@ -15,10 +15,6 @@ class App extends Component {
             children: [
                 new Header(),
                 new Carrusel({ carrusel: './images/spiderman.jpg' }),
-                // new Actions({ children: [
-                //     new Search(),
-                //     new Filters()
-                // ] }),
                 new MovieList()
             ]
         })
