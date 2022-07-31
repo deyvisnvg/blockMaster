@@ -22,7 +22,7 @@ import { SET_FILTER } from '../actions/index.js'
 
 // margin-bottom: 2em;
 const HeaderStyled = styled.header`
-    background: #000f38f0;
+    background: #0a0f31f0;
     padding: 20px 0 25px;
     position: fixed;
     z-index: 1;

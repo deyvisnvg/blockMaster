@@ -52,7 +52,9 @@ class Search extends Component {
                     name: "title",
                     type: "text"
                 }),
-                Button(null, 'Buscar')
+                Button({
+                    children: createElement('i', { class: 'icon-search' }, null)
+                }, '')
             ]
         })
     }

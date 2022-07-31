@@ -2,12 +2,13 @@ import styled from "../lib/styled-components.js";
 
 // font-size: 1rem;
 const Button = styled.button`
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
     background: #ffc201;
-    padding: 0.71em 1.4em;
-    color: black;
-    border: none;
-    border-radius: 0 10px 10px 0;
+    margin-right: 15px;
     cursor: pointer;
+    border: none;
 `
 
 export default Button;

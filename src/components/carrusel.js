@@ -1,13 +1,15 @@
 import { Component, createElement } from "../lib/react/index.js";
 import styled from "../lib/styled-components.js";
 import Wrapper from "./wrapper.js";
+import buttonNow from "./buttonNow.js";
+import buttonLater from "./buttonLater.js";
 
 const padding = {
     paddingTop: '115px',
     paddingBottom: '35px'
 }
 
-const paddingMax= {
+const paddingMax = {
     paddingTop: '225px',
     paddingBottom: '10px'
 }
@@ -46,11 +48,24 @@ class Carrusel extends Component {
 
         return Wrapper({
             ...paddingObj,
-            children: createElement('img', {
-                class: 'poster-carrusel',
-                src: carrusel,
-                alt: "logo pelicula",
-            }, null)
+            children: [
+                createElement('img', {
+                    class: 'poster-carrusel',
+                    src: carrusel,
+                    alt: "logo pelicula",
+                }, null),
+                createElement('div', {
+                    class: 'sectionButton',
+                    children: [
+                        buttonNow({
+                            children: createElement('i', { class: 'icon-play3' }, null)
+                        }, 'VER AHORA'),
+                        buttonLater({
+                            children: createElement('i', { class: 'icon-plus' }, null)
+                        }, 'VER DESPUÉS')
+                    ]
+                })
+            ]
         })
     }
 }

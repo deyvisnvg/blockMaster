@@ -5,7 +5,7 @@ import MovieList from "./movie-list.js";
 import Carrusel from "./carrusel.js";
 
 const AppStyled = styled.div`
-    background: #190606;
+    background: #101010;
     color: white;
 `
 
